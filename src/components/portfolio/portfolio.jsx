@@ -1,7 +1,8 @@
 import React from 'react'
 import './portfolio.css'
-import IMG1 from '../../assets/logo2.png'
-import IMG2 from '../../assets/ship.png'
+import IMG1 from '../../assets/colorFlip1.png'
+import IMG2 from '../../assets/tr_ship.png'
+import IMG3 from '../../assets/inProgress1.png'
 
 const Portfolio = () => {
     return(
@@ -36,7 +37,7 @@ const Portfolio = () => {
 
                 <article className="portfolio__item">
                     <div className="portfolio__item-image">
-                        <img src={IMG1} alt="" />
+                        <img src={IMG3} alt="" />
                     </div>
                     <h3>In Progress</h3>
                     <div className="portfolio__item-cta">
