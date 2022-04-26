@@ -1,6 +1,7 @@
 import React from 'react'
 import './portfolio.css'
 import IMG1 from '../../assets/logo2.png'
+import IMG2 from '../../assets/ship.png'
 
 const Portfolio = () => {
     return(
@@ -13,11 +14,23 @@ const Portfolio = () => {
                     <div className="portfolio__item-image">
                         <img src={IMG1} alt="" />
                     </div>
-                    <h3>This is a portfolio item title</h3>
+                    <h3>Color Flipper</h3>
                     <div className="portfolio__item-cta">
-                        <a href="https://github.com" className="btn">Github</a>
+                        <a id="btn1" href="https://github.com/ibra101408/colorFlipper" className="btn-bg" target="_blank">Github</a>
                         <a href="https://daniilvodenejev.ikt.khk.ee/javascript/portfolio/projects/colorFlipper/hex.html"
-                           className="btn btn-primary" target="_blank">Live Demo</a>
+                           className="btn btn-primary-bg" target="_blank">Live Demo</a>
+                    </div>
+                </article>
+
+                <article className="portfolio__item">
+                    <div className="portfolio__item-image">
+                        <img src={IMG2} alt="" />
+                    </div>
+                    <h3>Treasure Map Game</h3>
+                    <div className="portfolio__item-cta">
+                        <a id="btn1" href="https://github.com/ibra101408/treasure_map" className="btn-bg" target="_blank">Github</a>
+                        <a href="https://daniilvodenejev.ikt.khk.ee/javascript/jquery/jq8/"
+                           className="btn btn-primary-bg" target="_blank">Live Demo</a>
                     </div>
                 </article>
 
@@ -25,23 +38,11 @@ const Portfolio = () => {
                     <div className="portfolio__item-image">
                         <img src={IMG1} alt="" />
                     </div>
-                    <h3>This is a portfolio item title</h3>
+                    <h3>In Progress</h3>
                     <div className="portfolio__item-cta">
-                        <a href="https://github.com" className="btn">Github</a>
-                        <a href="https://daniilvodenejev.ikt.khk.ee/javascript/portfolio/projects/colorFlipper/hex.html"
-                           className="btn btn-primary" target="_blank">Live Demo</a>
-                    </div>
-                </article>
-
-                <article className="portfolio__item">
-                    <div className="portfolio__item-image">
-                        <img src={IMG1} alt="" />
-                    </div>
-                    <h3>This is a portfolio item title</h3>
-                    <div className="portfolio__item-cta">
-                        <a href="https://github.com" className="btn">Github</a>
-                        <a href="https://daniilvodenejev.ikt.khk.ee/javascript/portfolio/projects/colorFlipper/hex.html"
-                           className="btn btn-primary" target="_blank">Live Demo</a>
+                        <a id="btn1" href="https://github.com" className="btn-bg" target="_blank">Github</a>
+                        <a href="#"
+                           className="btn btn-primary-bg" target="_blank">Live Demo</a>
                     </div>
                 </article>
             </div>

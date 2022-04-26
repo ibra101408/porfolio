@@ -4,9 +4,12 @@
     grid-template-columns: 30% 58%;
     gap:12%;
 }
-
+.contact__option a{
+    color: var(--color-bg);
+}
 .contact__options{
     display: flex;
+    color: var(--color-bg);
     flex-direction: column;
     gap: 1.7rem;
 }
@@ -20,7 +23,7 @@
 }
 
 .contact__option:hover{
-    background: transparent;
+    background: #5BB099;
     border-color: var(--color-primary-variant);
 }
 
@@ -48,7 +51,7 @@ textarea{
     padding: 1.5rem;
     border-radius: 0.5rem;
     background: transparent;
-    border: 2px solid var(--color-primary-variant);
+    border: 2px solid var(--color-bg-variant);
     resize: none;
     color: var(--color-white);
 }

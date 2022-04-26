@@ -10,11 +10,12 @@
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    color: var(--color-bg)
 }
 
 .portfolio__item:hover{
     border-color: var(--color-primary-variant);
-    background: transparent;
+    background: #5BB099;
 }
 
 .portfolio__item-image{
@@ -22,8 +23,13 @@
     overflow: hidden;
 }
 
+.btn:hover{
+    background: #5BB099;
+}
+
 .portfolio__item h3{
     margin: 1.2rem 0.2rem;
+    color: var(--color-bg)
 }
 
 .portfolio__item-cta{
@@ -31,6 +37,18 @@
     gap:1rem;
     margin-bottom: 1rem;
 }
+#btn1{
+    color: var(--color-bg);
+    border-color: var(--color-bg);
+}
+/*
+.portfolio__item-cta a{
+    color: var(--color-bg);
+    border-color: var(--color-bg);
+}*/
+
+
+
 /*----------MEDIA QUERIES(MEDIUM DEVICES)-----------*/
 @media screen and (max-width: 1024px){
     .portfolio__container{

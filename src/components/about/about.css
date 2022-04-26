@@ -11,7 +11,7 @@
     background: linear-gradient(
     45deg,
     transparent,
-    var(--color-primary),
+    var(--color-bg-variant),
     transparent
     );
     display: grid;
@@ -43,12 +43,15 @@
     padding: 2rem;
     text-align: center;
     transition: var(--transition);
+    color: var(--color-bg);
 }
 
 .about__card:hover{
-    background: transparent;
+    background: #5BB099;
     border-color: var(--color-primary-variant);
     cursor: default;
+
+
 }
 
 .about__icon{
@@ -57,12 +60,30 @@
     margin-bottom: 1rem;
 }
 .about__card h5{
-    font-size: 0.95rem;
+    font-size: 1.05rem;
+}
+
+.about__card h5::after{
+    content: "";
+    display: block;
+    margin-left: 1.2rem;
+    width: 2.8rem;
+    padding-top: 0.2rem;
+    border-bottom: 2px solid var(--color-bg);
+}
+
+
+
+
+
+.container__small{
+    margin-top: 1rem;
 }
 
 .about__card small{
-    font-size: 0.7rem;
-    color: var(--color-light);
+    margin-top: 30px;
+    font-size: 0.8rem;
+    color: var(--color-bg);
 }
 
 .about__content p{

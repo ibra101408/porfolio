@@ -1,15 +1,24 @@
 import React from 'react'
 import './contact.css'
-import './mail.js'
-import ReactDOM from "react-dom";
-
+import { useRef } from 'react';
+import emailjs from 'emailjs-com'
 import {AiOutlineMail} from 'react-icons/ai'
 import {RiMessengerLine} from 'react-icons/ri'
 import {FaTelegramPlane} from 'react-icons/fa'
 
 
 const Contact = () => {
-    return(
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_dn42dvd', 'template_adr3e9z', form.current, 'jxVS_et7quAuzL01h')
+
+        e.target.reset();
+    };
+
+        return(
         <section id='contact'>
             <h5>Get In Touch</h5>
             <h2>Contact Me</h2>
@@ -38,11 +47,11 @@ const Contact = () => {
                     </article>
                 </div>
                 {/*end of options*/}
-                <form action="">
+                <form ref={form} onSubmit={sendEmail}>
                     <input type="text" name="name" placeholder="Your Full Name" required/>
                     <input type="email" name="email" placeholder="Your Email" required/>
                     <textarea name="message" rows="7" placeholder="Your Message" required/>
-                    <button type="submit" className="btn btn-primary">Send a Message</button>
+                    <button type="submit" className="btn btn-primary-bg">Send a Message</button>
                 </form>
             </div>
 

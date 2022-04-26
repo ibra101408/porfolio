@@ -13,7 +13,7 @@
 }
 
 .experience__container > div:hover{
-    background: transparent;
+    background: #5BB099;
     border-color:var(--color-primary-variant);
     cursor: default;
 }
@@ -21,7 +21,7 @@
 .experience__container > div h3{
     text-align: center;
     margin-bottom: 2rem;
-    color: var(--color-primary);
+    color: var(--color-bg);
 }
 .experience__content{
     display: grid;
@@ -32,11 +32,13 @@
 .experience__details{
     display: flex;
     gap: 1rem;
+    color: var(--color-bg);
+    font-size: 1.1rem;
 }
 
 .experience__details-icon{
     margin-top: 6px;
-    color: var(--color-primary);
+    color: var(--color-bg);
 }
 
 /*----------MEDIA QUERIES(MEDIUM DEVICES)-----------*/
