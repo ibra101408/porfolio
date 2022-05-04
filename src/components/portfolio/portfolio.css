@@ -1,7 +1,7 @@
 .portfolio__container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
+    grid-template-columns: repeat(2, 0.5fr);
+    gap: 5.5rem;
 }
 
 .portfolio__item{
@@ -49,18 +49,23 @@
 
 
 
-/*----------MEDIA QUERIES(MEDIUM DEVICES)-----------*/
-@media screen and (max-width: 1024px){
-    .portfolio__container{
-        grid-template-columns: 1fr 1fr;
-        gap:1.2rem;
-    }
 
-}
 /*----------MEDIA QUERIES(SMALL DEVICES)-----------*/
-@media screen and (max-width: 600px) {
-    .portfolio__container{
+@media all and (max-width: 700px) {
+    .portfolio__container {
         grid-template-columns: 1fr;
-        gap:1rem;
+        gap: 3rem;
+        color: red;
+    }
+    body{
+        color:red;
+    }
+    .portfolio__item {
+        background: red;
+        color: red;
+    }
+    .portfolio__item:hover{
+        border-color: var(--color-primary-variant);
+        background: red;
     }
 }

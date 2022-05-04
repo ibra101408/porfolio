@@ -3,6 +3,7 @@ import './header.css'
 import CTA from "./CTA";
 import ME from '../../assets/me.jpg'
 import Header_socials from './head_socials'
+import Example from "./example";
 
 const Header = () => {
     return(
@@ -11,6 +12,7 @@ const Header = () => {
                 <h5>Hello, I'm </h5>
                 <h1>Daniel</h1>
                 <CTA />
+                {/*<Example/> bullshit here*/}
                 <Header_socials/>
 
                 <div className="me">

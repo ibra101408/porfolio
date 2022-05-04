@@ -2,7 +2,6 @@ import React from 'react'
 import './portfolio.css'
 import IMG1 from '../../assets/colorFlip1.png'
 import IMG2 from '../../assets/tr_ship.png'
-import IMG3 from '../../assets/inProgress1.png'
 
 const Portfolio = () => {
     return(
@@ -34,18 +33,8 @@ const Portfolio = () => {
                            className="btn btn-primary-bg" target="_blank">Live Demo</a>
                     </div>
                 </article>
+                {console.log(React.version)}
 
-                <article className="portfolio__item">
-                    <div className="portfolio__item-image">
-                        <img src={IMG3} alt="" />
-                    </div>
-                    <h3>In Progress</h3>
-                    <div className="portfolio__item-cta">
-                        <a id="btn1" href="https://github.com" className="btn-bg" target="_blank">Github</a>
-                        <a href="#"
-                           className="btn btn-primary-bg" target="_blank">Live Demo</a>
-                    </div>
-                </article>
             </div>
         </section>
     )
