@@ -27,9 +27,10 @@ const About = () => {
                             <h5>Dron pilot</h5>
                             <div className="container__small">
                                 <small>
-                                    One of my hobbies is filing with a drone.
+                                    One of my hobbies is fling with a drone.
                                     I really love to travel to different countries
-                                    and search beautiful places and views for filming.
+                                    and search for beautiful places and views for filming.
+                                    Also I passed A1/A3 category.
                                 </small>
                             </div>
                         </article>
@@ -41,6 +42,7 @@ const About = () => {
                                 <small>
                                     Since I was young my favorite sport was football.
                                     Till now I play every week with friends for fun.
+                                    As well I am big fan of Chelsea FC for more than ten years.
                                 </small>
                             </div>
                         </article>
@@ -50,18 +52,22 @@ const About = () => {
                             <h5>Video games</h5>
                             <div className="container__small">
                                 <small>
-                                    Video games also one of my hobby.
-                                    Sometimes I find time to play in my ps4 or VR glasses with friends.
+                                    Video games also one of my hobbies.
+                                    Sometimes I find a time to play in my ps4 or VR glasses with friends.
+                                    Besides I really like playing board games with whole family.
                                 </small>
                             </div>
                         </article>
                     </div>
+                    <div class="about_text">
+                        <p>
+                            I am 22 years old Tartu Vocational Collage student who are looking for an internship opportunity.
+                            For now I'm at the beginning of the development and mostly study front-end development and databases,
+                            but I'll be happy to any challange.
+                        </p>
+                    </div>
 
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
-
-                    <a href="#contact" className="btn btn-primary-bg">Lets talk</a>
+                    <a id="talk" href="#contact" className="btn btn-primary-bg">Lets talk</a>
                 </div>
             </div>
         </section>

@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -45,6 +44,7 @@ body{
     background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
+
 }
 
     /*----------GENERAL STYLES-----------*/
@@ -92,9 +92,10 @@ a:hover {
 }
 
 .btn{
+    background: var(--color-white);
     width: max-content;
     display: inline-block;
-    color: var(--color-primary);
+    color: var(--color-bg);
     padding: 0.75rem 1.2rem;
     border-radius: 0.4rem;
     cursor:pointer;
@@ -157,20 +158,22 @@ img{
 }
 
 
-/*----------MEDIA QUERIES(MEDIUM DEVICES)-----------*/
+/*----------MEDIA QUERIES(MEDIUM DEVICES)-----------
 @media screen and (max-width: 1024px){
     .container{
-        width: var(--container-width-md)
+        width: var(--container-width-md);
+        margin: 0 auto;
     }
 
     section{
         margin-top: 6rem;
     }
-}
-/*----------MEDIA QUERIES(SMALL DEVICES)-----------*/
+}*/
+/*----------MEDIA QUERIES(SMALL DEVICES)-------------https://stackblitz.com/edit/react-cu8xqj?file=src%2FApp.js----------https://github.com/yocontra/react-responsive-----------------------https://github.com/academind/react-complete-guide-code/blob/06-styling/code/06-styled-components-media-queries/src/components/UI/Button/Button.js-------*/
 @media all and (max-width: 600px){
     .container{
-        width: var(--container-width-sm)
+        width: var(--container-width-sm);
+        margin: 0 auto;
     }
 
     section > h2{
@@ -178,9 +181,11 @@ img{
     }
 
     body {
-        font-family: 'Algerian', sans-serif;
-        background: red;
-        color: green;
+        width: var(--container-width-sm);
+        margin: 0 auto;
+        /*font-family: 'Algerian', sans-serif;
+        background: blue;
+        color: green;*/
     }
 }
 

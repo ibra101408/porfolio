@@ -59,17 +59,45 @@ textarea{
 
 
 
-/*----------MEDIA QUERIES(MEDIUM DEVICES)-----------*/
+/*----------MEDIA QUERIES(MEDIUM DEVICES)-----------
 @media screen and (max-width: 1024px){
     .container.contact__container{
         grid-template-columns: 1fr;
         gap:2rem;
     }
-}
+}*/
 /*----------MEDIA QUERIES(SMALL DEVICES)-----------*/
 @media screen and (max-width: 600px) {
-        .container.contact__container{
-            width: var(--container-width-sm);
-        }
+
+    .container.contact__container{
+        width: var(--container-width-sm);
+        display: grid;
+        grid-template-columns:  repeat(1, 1fr);
+        gap:2rem 3rem;
+    }
+
+    #contact__option_1{
+        margin-bottom: 1%;
+    }
+    #contact__option_2{
+        margin-top: 1%;
+    }
+    #contact__option_3{
+        margin-top: 2%;
+    }
+
+    #contact_form_1{
+        margin-bottom: 1%;
+    }
+    #contact_form_2{
+        margin-top: 1%;
+    }
+    #contact_form_3{
+        margin-top: 2%;
+    }
+    #contact_btn {
+        margin-top: 2%;
+    }
+
 }
 

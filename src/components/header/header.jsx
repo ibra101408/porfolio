@@ -1,11 +1,12 @@
 import React from 'react'
 import './header.css'
 import CTA from "./CTA";
-import ME from '../../assets/me.jpg'
+import ME from '../../assets/me_3.jpg'
 import Header_socials from './head_socials'
-import Example from "./example";
+
 
 const Header = () => {
+
     return(
         <header>
             <div className="container header__container">

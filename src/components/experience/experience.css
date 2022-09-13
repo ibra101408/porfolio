@@ -17,6 +17,16 @@
     border-color:var(--color-primary-variant);
     cursor: default;
 }
+.experience__content_block{
+
+}
+.h4{
+    font-weight: bolder;
+}
+.h3{
+    text-shadow: 0px 0.5px #242424;
+}
+
 
 .experience__container > div h3{
     text-align: center;
@@ -41,29 +51,106 @@
     color: var(--color-bg);
 }
 
-/*----------MEDIA QUERIES(MEDIUM DEVICES)-----------*/
-@media screen and (max-width: 1024px){
-    .experience__container{
-        grid-template-columns: 1fr;
-    }
+.link{
+    color:black;
 
-    .experience__container > div{
-        width: 80%;
-        padding: 2rem;
-        margin: 0 auto;
-    }
-    .experience__content{
-        padding: 1rem;
-    }
+
 }
+
+.link {
+    border-bottom: 1.8px solid black;
+    transition: all 0.25s linear;
+    position: relative;
+}
+.link:hover{
+    color:black;
+}
+
+.link:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2.5px;
+    background-color: #AE5A61;
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* this is to match where the border is */
+    transform-origin: left;
+    transform: scale(0);
+    transition: 0.35s linear;
+    /*   will-change: transform; */
+}
+
+.link:hover:before {
+    transform: scale(1);
+}
+
+/*Toggle Tag*/
+/*
+input[type="checkbox"]{
+    display: none;
+}
+
+.gradeK,
+.grade1st,
+.grade2nd,
+.grade3rd{
+    --grade-color: pink;
+    --text-color: black;
+}
+.grade4th{
+    --grade-color: red;
+    --text-color: blue;
+}
+
+
+span{
+    font-weight: bold;
+    border: 3px solid var(--grade-color);
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 10px;
+    min-width: 50px;
+    text-align: center;
+}
+
+input[type="checkbox"]:checked + span{
+    background: var(--grade-color);
+    color: var(--text-color);
+}
+
+#html input[type="checkbox"]:checked{
+    color: red;
+}*/
+
+
+
 /*----------MEDIA QUERIES(SMALL DEVICES)-----------*/
 @media screen and (max-width: 600px) {
+
+    #experience{
+        margin-top: 50%;
+    }
     .experience__container{
-        gap:1rem;
-    }
-    .experience__container > div{
+        display: grid;
+        margin-bottom: 100%;
         width: 100%;
-        padding: 2rem 1rem;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+        padding: 1rem 1rem;
     }
+    .experience__frontend{
+        margin-right: 10%;
+    }
+    .experience__backend{
+        margin-right: 10%;
+    }
+    .experience__container > div {
+        padding: 2.4rem 4rem;
+    }
+
+
 }
 

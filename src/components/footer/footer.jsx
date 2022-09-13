@@ -10,17 +10,17 @@ const Footer = () => {
             {/*<a href="#" className="footer__logo">DaN</a>*/}
 
             <ul className="permalinks">
-                <li><a href="#" className="hover-underline-animation">Home</a></li>
-                <li><a href="#about" className="hover-underline-animation">About</a></li>
-                <li><a href="#experience" className="hover-underline-animation">Experience</a></li>
-                <li><a href="#portfolio" className="hover-underline-animation">Portfolio</a></li>
-                <li><a href="#contact" className="hover-underline-animation">Contact</a></li>
+                <li><a id="home" href="#" className="hover-underline-animation">Home</a></li>
+                <li><a id="about" href="#about" className="hover-underline-animation">About</a></li>
+                <li><a id="experience" href="#experience" className="hover-underline-animation">Experience</a></li>
+                <li><a id="portfolio" href="#portfolio" className="hover-underline-animation">Portfolio</a></li>
+                <li><a id="contact" href="#contact" className="hover-underline-animation">Contact</a></li>
             </ul>
 
             <div className="footer__socials">
-                <a href="https://www.facebook.com/danilkavodenejev/" target="_blank"><BsFacebook/></a>
-                <a href="https://www.instagram.com/stuffofdrone/" target="_blank"><BsInstagram/></a>
-                <a href="https://github.com/ibra101408" target="_blank"><BsGithub/></a>
+                <a id="facebook" href="https://www.facebook.com/danilkavodenejev/" target="_blank"><BsFacebook/></a>
+                <a id="instagram" href="https://www.instagram.com/stuffofdrone/" target="_blank"><BsInstagram/></a>
+                <a id="github" href="https://github.com/ibra101408" target="_blank"><BsGithub/></a>
             </div>
 
         </footer>

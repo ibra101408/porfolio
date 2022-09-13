@@ -18,9 +18,6 @@ header{
     justify-content: center;
 }
 
-.btn-primary{
-    background: red;
-}
 
     /*  HEADER SOCIALS  */
 .header__socials{
@@ -66,21 +63,30 @@ header{
 }
 
 
-/*----------MEDIA QUERIES(MEDIUM DEVICES)-----------*/
-@media screen and (max-width: 1024px) {
-    header{
-        height: 68vh;
-    }
-}
 
 /*----------MEDIA QUERIES(MEDIUM DEVICES)-----------*/
 @media screen and (max-width: 600px){
     header{
         height: 68vh;
     }
-    .header__socials,
-    scroll__down{
+    .header__socials{
         display: none;
+    }
+    /*
+    .cta{
+        display: marker;
+    }*/
+    header {
+        height: 100vh;
+        padding-top: 7rem;
+    }
+    #btn1{
+        font-size: 12px;
+        margin-right: 1%;
+    }
+    #btn2{
+        font-size: 12px;
+        margin-left: 1%;
     }
 }
 
