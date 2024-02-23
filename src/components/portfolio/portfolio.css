@@ -1,67 +1,115 @@
-.portfolio__container{
+.portfolio__container {
     display: grid;
     grid-template-columns: repeat(2, 0.5fr);
     gap: 5.5rem;
 }
 
-.portfolio__item{
+.portfolio__item {
     background: var(--color-bg-variant);
     padding: 1.2rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
-    color: var(--color-bg)
+    color: var(--color-bg);
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure items take up full height */
 }
 
-.portfolio__item:hover{
+.portfolio__item:hover {
     border-color: var(--color-primary-variant);
     background: #5BB099;
 }
 
-.portfolio__item-image{
+.portfolio__item-image {
     border-radius: 1.5rem;
     overflow: hidden;
 }
 
-.btn:hover{
+.portfolio__item h3 {
+    margin: 1.2rem 0.2rem;
+    color: var(--color-bg);
+}
+
+.portfolio__item-content {
+    margin-top: auto; /* Push content to the bottom */
+}
+
+.portfolio__item-content > div {
+    display: flex;
+    gap: 1rem;
+}
+
+.gitHub_link_btn {
+    font-weight: 600;
+    background: var(--color-bg);
+    display: flex !important;
+    align-items: center;
+    gap: 10px;
+    border: none !important;
+}
+
+.gitHub_link_btn:hover {
+    background: #252525;
+}
+
+.btn:hover {
     background: #5BB099;
 }
 
-.portfolio__item h3{
-    margin: 1.2rem 0.2rem;
-    color: var(--color-bg)
+#github_btn {
+    color: var(--color-bg);
+    border-color: var(--color-bg);
 }
 
-.portfolio__item-cta{
+
+.demo_btn {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--color-bg);
+    transition: all .2s;
+    padding: 10px 20px;
+    border-radius: 0.8rem;
+    background: #D6656A;
+    border: 1px solid transparent;
     display: flex;
-    gap:1rem;
-    margin-bottom: 1rem;
+    align-items: center;
+    font-size: 16px;
 }
-#github_btn{
-    color: var(--color-bg);
-    border-color: var(--color-bg);
+
+.demo_btn:hover {
+    background: #dc7d81;
+    color: #242424;
 }
-/*
-.portfolio__item-cta a{
-    color: var(--color-bg);
-    border-color: var(--color-bg);
-}*/
+
+.demo_btn > svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform .3s ease-in-out;
+}
+
+.demo_btn:hover svg {
+    transform: translateX(5px);
+    color: #242424;
+}
+
+.demo_btn:active {
+    transform: scale(0.95);
+}
 
 
-
-
-/*----------MEDIA QUERIES(SMALL DEVICES)-----------*/
+/* Media queries */
 @media all and (max-width: 600px) {
     .portfolio__container {
         grid-template-columns: 1fr;
         gap: 1rem;
-
     }
-    #github_btn{
+
+    #github_btn {
         margin-right: 1.5%;
     }
-    #demo_btn{
+
+    #demo_btn {
         margin-left: 1.5%;
     }
-
 }

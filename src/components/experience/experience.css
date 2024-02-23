@@ -1,8 +1,4 @@
-.experience__container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap:2rem;
-}
+
 
 .experience__container > div{
     background: var(--color-bg-variant);
@@ -24,7 +20,22 @@
     font-weight: bolder;
 }
 .h3{
-    text-shadow: 0px 0.5px #242424;
+    text-shadow: 0 0.5px #242424;
+}
+.tag__container{
+    display: flex; /* Use flexbox to ensure tags stay in a row */
+    flex-wrap: wrap; /* Allow tags to wrap onto new lines if needed */
+    gap: 5px; /* Adjust this value to add spacing between tags */
+}
+.tags{
+    color: #292929;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    margin: .25em .1em;
+    font-family:  "Poppins", sans-serif;
+
 }
 
 
@@ -33,11 +44,11 @@
     margin-bottom: 2rem;
     color: var(--color-bg);
 }
-.experience__content{
+/*.experience__content{
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
-}
+}*/
 
 .experience__details{
     display: flex;
@@ -83,49 +94,113 @@
 
 .link:hover:before {
     transform: scale(1);
+}/*
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+*/
+.experience__content_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
 }
 
-/*Toggle Tag*/
-/*
-input[type="checkbox"]{
-    display: none;
+.experience__content_items {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #6969694d;
 }
 
-.gradeK,
-.grade1st,
-.grade2nd,
-.grade3rd{
-    --grade-color: pink;
-    --text-color: black;
-}
-.grade4th{
-    --grade-color: red;
-    --text-color: blue;
+.experience__content_name {
+    margin-top: 0;
 }
 
+.experience__content_tag {
+    margin: 10px 0;
+}
 
-span{
-    font-weight: bold;
-    border: 3px solid var(--grade-color);
-    border-radius: 20px;
+.experience__content_github {
+    grid-area: 3 / 1 / 4 / -1; /* Placing GitHub link in the third row and spanning all columns */
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.tag__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5%;
+}
+
+.tags {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    background-color: #519E8A;
+    border-radius: 10px;
     cursor: pointer;
+    color: #272727;
+}
+.tag {
     display: inline-block;
     padding: 5px 10px;
-    margin-right: 10px;
-    min-width: 50px;
-    text-align: center;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    color: #fff;
 }
 
-input[type="checkbox"]:checked + span{
-    background: var(--grade-color);
-    color: var(--text-color);
+.tag-0 {
+    background-color: #519E8A;
 }
 
-#html input[type="checkbox"]:checked{
-    color: red;
-}*/
+.tag-1 {
+    background-color: #E94F37;
+}
 
+.tag-2 {
+    background-color: #F9A03F;
+}
 
+.tag-3 {
+    background-color: #3E92CC;
+}
+
+.tag-4 {
+    background-color: #8F4BC7;
+}
+
+.tag-5 {
+    background-color: #5CA27C;
+}
+
+.tag-6 {
+    background-color: #F4C74C;
+}
+
+.tag-7 {
+    background-color: #D6656A;
+}
+
+.tag-8 {
+    background-color: #3A6EA5;
+}
+
+.tag-9 {
+    background-color: #7E6F68;
+}
+
+.tag-10 {
+    background-color: #CF5332;
+}
+
+.tag-11 {
+    background-color: #cf32cc;
+}
 
 /*----------MEDIA QUERIES(SMALL DEVICES)-----------*/
 @media screen and (max-width: 600px) {

@@ -59,7 +59,7 @@ const About = () => {
                             </div>
                         </article>
                     </div>
-                    <div class="about_text">
+                    <div className="about_text">
                         <p>
                             I am 22 years old Tartu Vocational Collage student who are looking for an internship opportunity.
                             For now I'm at the beginning of the development and mostly study front-end development and databases,

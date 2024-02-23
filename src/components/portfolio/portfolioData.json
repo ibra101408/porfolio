@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "title": "Booking system",
+    "img": "booking.png",
+    "githubLink": "https://github.com/ibra101408/booking_vue",
+    "demoLink": "https://explorerstudio.kristaleks.ee/"
+  },
+  {
+    "id": 2,
+    "title": "Voting",
+    "img": "preview2.png",
+    "githubLink": "https://github.com/ibra101408/voting",
+    "demoLink": "https://daniilvodenejev.ikt.khk.ee/vote/"
+  },
+
+  {
+    "id": 3,
+    "title": "Color Flipper",
+    "img": "colorFlipper.png",
+    "githubLink": "https://github.com/ibra101408/colorFlipper",
+    "demoLink": "https://daniilvodenejev.ikt.khk.ee/javascript/colorFlipper/"
+  },
+  {
+    "id": 4,
+    "title": "Treasure Map Game",
+    "img": "ship_logo.png",
+    "githubLink": "https://github.com/ibra101408/treasure_map",
+    "demoLink": "https://daniilvodenejev.ikt.khk.ee/javascript/jquery/jq8/"
+  }
+]

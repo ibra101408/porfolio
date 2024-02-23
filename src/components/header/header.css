@@ -41,7 +41,6 @@ header{
 
 .me{
     width:22rem;
-    height: 30rem;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);

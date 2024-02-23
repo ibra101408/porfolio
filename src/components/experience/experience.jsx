@@ -1,23 +1,71 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './experience.css'
-import {BsCheck2Circle} from 'react-icons/bs'
-import {CgAdidas} from 'react-icons/cg'
-import { ToggleTag } from "./ToggleTag";
-import { grades } from "./grades";
+import { FaGithub } from "react-icons/fa";
+import experienceData from './experienceData.json'; // Assuming you have your data in a JSON file
 
 const Experience = () => {
-  /*  if (ToggleTag ( "K").checked== true) {
-        console.log("checked");
-    }else{
-        console.log("not check")
-    }*/
-    return(
+    const [selectedTags, setSelectedTags] = useState([]);
+    const allTags = Array.from(new Set(experienceData.flatMap((item) => item.tags)));
 
+    const handleTagClick = (tag) => {
+        if (selectedTags.includes(tag)) {
+            setSelectedTags(selectedTags.filter((selectedTag) => selectedTag !== tag));
+        } else {
+            setSelectedTags([...selectedTags, tag]);
+        }
+    };
+
+    const filteredExperience = experienceData.filter((item) =>
+        selectedTags.length === 0 || selectedTags.every((tag) => item.tags.includes(tag))
+    );
+
+    return (
         <section id='experience'>
-
             <h5>What Skills I Have</h5>
             <h2>My Experience</h2>
-            {/* <ToggleTag grade="K"/>*/}
+            <div className="container">
+                <div className="tag__container">
+                    {allTags.map((tag) => (
+                        <span
+                            className="tags"
+                            key={tag}
+                            onClick={() => handleTagClick(tag)}
+                            style={{
+                                backgroundColor: selectedTags.includes(tag) ? '#ccc268' : 'rgb(161, 209, 195)',
+                            }}
+                        >
+                    {tag}
+                </span>
+                    ))}
+                </div>
+
+                <div className="experience__content_container">
+                    {filteredExperience.map((item) => (
+                        <div className="experience__content_items" key={item.id}>
+                            <h3 className="experience__content_name">{item.name}</h3>
+                            <p className="experience__content_tag">
+                                {item.tags.map((tag, index) => (
+                                    <span className={`tag tag-${index}`} key={index}>{tag}</span>
+                                ))}
+                            </p>
+                            <p>
+                                <a className="experience__content_github" href={item.githubLink} target="_blank" rel="noopener noreferrer">
+                                    <FaGithub />
+                                </a>
+                            </p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    )
+}
+
+export default Experience
+{/*
+            <h5>What Skills I Have</h5>
+            <h2>My Experience</h2>
+
             <div className="container experience__container">
                 <div className="experience__frontend">
                     <h3 className="h3">Frontend Development</h3>
@@ -75,7 +123,7 @@ const Experience = () => {
                                 </div>
                             </article>
                         </div>
-                        {/* JavaScript */}
+
                         <article className="experience__details">
 
                             <BsCheck2Circle     className="experience__details-icon"/>
@@ -99,7 +147,7 @@ const Experience = () => {
                         </article>
                     </div>
                 </div>
-                {/* end of frontend*/}
+
 
 
 
@@ -137,8 +185,7 @@ const Experience = () => {
                 </div>
             </div>
         </section>
-
-    )
+        */
 }
 
-export default Experience
+

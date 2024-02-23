@@ -1,5 +1,5 @@
 import React from 'react'
-import CV from '../../assets/cv.pdf'      /*  need to add a CV    */
+import CV from '../../assets/cv_vodenejev.pdf'      /*  need to add a CV    */
 import './header.css'
 
 
