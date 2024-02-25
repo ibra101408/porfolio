@@ -24,7 +24,7 @@ const Portfolio = () => {
                             <div className="portfolio__item-image">
                                 <img src={item.img} alt=""/>
                             </div>
-                            <h3>{item.title}</h3>
+                            <h2 className="portfolio__item-title">{item.title}</h2>
                                 <div className="portfolio__item-content">
                                         <div>
                                                 <a href={item.githubLink} className="gitHub_link_btn btn-bg" target="_blank" rel="noopener noreferrer">

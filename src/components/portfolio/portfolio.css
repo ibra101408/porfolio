@@ -26,7 +26,7 @@
     overflow: hidden;
 }
 
-.portfolio__item h3 {
+.portfolio__item h2 {
     margin: 1.2rem 0.2rem;
     color: var(--color-bg);
 }
@@ -61,7 +61,6 @@
     color: var(--color-bg);
     border-color: var(--color-bg);
 }
-
 
 .demo_btn {
     cursor: pointer;
@@ -99,17 +98,83 @@
 
 
 /* Media queries */
+@media all and (min-width: 600px) and (max-width: 1034px) {
+    .portfolio__container {
+
+    }
+
+    .portfolio__item {
+        padding: 1rem;
+    }
+
+    .gitHub_link_btn {
+        font-size: 14px;
+    }
+
+    .demo_btn {
+        font-size: 14px;
+
+    }
+}
+
+@media all and (max-width: 915px) {
+    .portfolio__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio__item {
+        width: 70%;
+    }
+
+    .gitHub_link_btn {
+        font-size: 16px;
+    }
+
+    .demo_btn {
+        font-size: 16px;
+
+    }
+}
+
 @media all and (max-width: 600px) {
     .portfolio__container {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         gap: 1rem;
+        width: 100% !important;
+        margin-bottom: 70% !important;
+    }
+
+    .portfolio__item {
+        width: 90%;
+    }
+
+    .demo_btn {
+        padding: 0.3rem 0.5rem;
+    }
+
+    .demo_btn > svg {
+        width: 24px;
     }
 
     #github_btn {
         margin-right: 1.5%;
     }
 
+
     #demo_btn {
         margin-left: 1.5%;
     }
+}
+
+@media all and (max-width: 360px) {
+    .portfolio__item-content > div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
 }

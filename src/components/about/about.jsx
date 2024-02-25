@@ -61,8 +61,8 @@ const About = () => {
                     </div>
                     <div className="about_text">
                         <p>
-                            I am 22 years old Tartu Vocational Collage student who are looking for an internship opportunity.
-                            For now I'm at the beginning of the development and mostly study front-end development and databases,
+                            I am a 24-year-old Tartu Vocational College student who has already completed my studies and is now actively seeking job opportunities.
+                            For now I'm at the beginning of the development and mostly study front-end development,
                             but I'll be happy to any challange.
                         </p>
                     </div>

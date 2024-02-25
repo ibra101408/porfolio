@@ -71,10 +71,14 @@ header{
     .header__socials{
         display: none;
     }
-    /*
-    .cta{
-        display: marker;
-    }*/
+    .me{
+        width: 13rem;
+        border-radius: 1rem;
+        margin: 3rem auto 0 auto;
+        overflow: hidden;
+        padding: 0;
+    }
+
     header {
         height: 100vh;
         padding-top: 7rem;

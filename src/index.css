@@ -180,12 +180,9 @@ img{
         margin-bottom: 2rem;
     }
 
-    body {
-        width: var(--container-width-sm);
+    section{
+        width: 90%;
         margin: 0 auto;
-        /*font-family: 'Algerian', sans-serif;
-        background: blue;
-        color: green;*/
     }
 }
 
